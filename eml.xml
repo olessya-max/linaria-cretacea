@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eml:eml
+    xmlns:eml="http://knb.ecoinformatics.org/eml-2.1.1"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://knb.ecoinformatics.org/eml-2.1.1 
+        https://eml.ecoinformatics.org/eml-2.1.1/eml.xsd"
+    packageId="linaria-cretacea.1.1"
+    system="knb">
+
+  <dataset>
+    <!-- Title and Authors -->
+    <title>Distribution of Linaria cretacea in Kazakhstan and Neighboring Countries</title>
+    <creator>
+      <individualName>
+        <givenName>M.</givenName>
+        <surName>Bakytzhanova</surName>
+      </individualName>
+      <organizationName>Abai Kazakh National Pedagogical University, Department of Biology</organizationName>
+      <electronicMailAddress>maral.bakytzhanova@mail.ru</electronicMailAddress>
+      <userId directory="ORCID">0009-0006-1255-2971</userId>
+    </creator>
+
+    <!-- Publication date -->
+    <pubDate>2025</pubDate>
+
+    <!-- Abstract -->
+    <abstract>
+      <para>
+        This dataset compiles georeferenced occurrence records for the rare chalk‐loving plant 
+        <italic>Linaria cretacea</italic> Fisch. ex Spreng. from digitized herbarium specimens in Kazakhstan (AA), Russia (LE, MW) and Ukraine (KW), supplemented by field surveys in the Aktobe Region (2010–2012, 2020–2022). Records include collection date, locality, habitat description, and collector. Data are formatted in Darwin Core and intended for botanical, conservation, and biogeographical analyses.
+      </para>
+    </abstract>
+
+    <!-- License -->
+    <intellectualRights>
+      <para>
+        CC BY 4.0 — Creative Commons Attribution 4.0 International. Users are free to share and adapt the data provided appropriate credit is given (Bakytzhanova M. 2025). See <url>https://creativecommons.org/licenses/by/4.0/</url>.
+      </para>
+    </intellectualRights>
+
+    <!-- Contacts -->
+    <contact>
+      <individualName>
+        <givenName>M.</givenName>
+        <surName>Bakytzhanova</surName>
+      </individualName>
+      <electronicMailAddress>maral.bakytzhanova@mail.ru</electronicMailAddress>
+      <organizationName>Abai Kazakh National Pedagogical University</organizationName>
+    </contact>
+
+    <!-- Coverage -->
+    <coverage>
+      <geographicCoverage>
+        <geographicDescription>Eastern Ukraine, Southern European Russia, Cis‑Ural & Northwest Kazakhstan</geographicDescription>
+        <boundingCoordinates>
+          <northBoundLatitude>52.5</northBoundLatitude>
+          <southBoundLatitude>48.0</southBoundLatitude>
+          <westBoundLongitude>35.0</westBoundLongitude>
+          <eastBoundLongitude>59.0</eastBoundLongitude>
+        </boundingCoordinates>
+      </geographicCoverage>
+      <temporalCoverage>
+        <rangeOfDates>
+          <beginDate>
+            <calendarDate>1825-06-01</calendarDate>
+          </beginDate>
+          <endDate>
+            <calendarDate>2022-06-15</calendarDate>
+          </endDate>
+        </rangeOfDates>
+      </temporalCoverage>
+    </coverage>
+
+    <!-- Methods summary -->
+    <methods>
+      <methodStep>
+        <description>
+          Herbarium specimen data were digitized from AA (Kazakhstan), LE and MW (Russia), KW (Ukraine) and verified via GBIF and POWO. Field surveys in Aktobe Region (2010–2012, 2020–2022) included GPS georeferencing, photographic documentation, and voucher collection. Records were standardized to Darwin Core, checked in QGIS, and assembled into occurrence.csv.
+        </description>
+      </methodStep>
+    </methods>
+
+    <!-- Data table -->
+    <dataTable>
+      <entityName>occurrence.csv</entityName>
+      <entityDescription>Core occurrence records in Darwin Core format</entityDescription>
+      <physical>
+        <objectName>occurrence.csv</objectName>
+        <formatName>text/csv</formatName>
+        <distribution>
+          <online>
+            <url function="download">https://raw.githubusercontent.com/&lt;your‑username&gt;/linaria-cretacea-data/main/occurrence.csv</url>
+          </online>
+        </distribution>
+      </physical>
+      <attributeList>
+        <attribute>
+          <attributeName>occurrenceID</attributeName>
+          <attributeDefinition>Unique record identifier (UUID or institution code + catalogNumber)</attributeDefinition>
+          <measurementScale>
+            <nominal/>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>scientificName</attributeName>
+          <attributeDefinition>Taxonomic name of the species</attributeDefinition>
+          <measurementScale>
+            <nominal/>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>eventDate</attributeName>
+          <attributeDefinition>Date of collection or observation (YYYY-MM-DD)</attributeDefinition>
+          <measurementScale>
+            <dateTime>
+              <formatString>YYYY-MM-DD</formatString>
+            </dateTime>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>country</attributeName>
+          <attributeDefinition>Country name</attributeDefinition>
+          <measurementScale>
+            <nominal/>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>stateProvince</attributeName>
+          <attributeDefinition>Administrative region or province</attributeDefinition>
+          <measurementScale>
+            <nominal/>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>locality</attributeName>
+          <attributeDefinition>Detailed locality description</attributeDefinition>
+          <measurementScale>
+            <nominal/>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>decimalLatitude</attributeName>
+          <attributeDefinition>Latitude in decimal degrees (WGS84)</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>degree</standardUnit>
+              </unit>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>decimalLongitude</attributeName>
+          <attributeDefinition>Longitude in decimal degrees (WGS84)</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>degree</standardUnit>
+              </unit>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>coordinateUncertaintyInMeters</attributeName>
+          <attributeDefinition>Uncertainty of georeference in meters</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>meter</standardUnit>
+              </unit>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>basisOfRecord</attributeName>
+          <attributeDefinition>Type of record: PreservedSpecimen or HumanObservation</attributeDefinition>
+          <measurementScale>
+            <nominal/>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>institutionCode</attributeName>
+          <attributeDefinition>Herbarium or institution code</attributeDefinition>
+          <measurementScale>
+            <nominal/>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>catalogNumber</attributeName>
+          <attributeDefinition>Herbarium catalog number</attributeDefinition>
+          <measurementScale>
+            <nominal/>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>recordedBy</attributeName>
+          <attributeDefinition>Collector name(s)</attributeDefinition>
+          <measurementScale>
+            <nominal/>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>habitat</attributeName>
+          <attributeDefinition>Brief description of habitat</attributeDefinition>
+          <measurementScale>
+            <nominal/>
+          </measurementScale>
+        </attribute>
+      </attributeList>
+    </dataTable>
+
+  </dataset>
+</eml:eml>
