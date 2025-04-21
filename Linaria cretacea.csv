@@ -1,0 +1,15 @@
+﻿;
+Field;Description
+occurrenceID;Unique record identifier (e.g. AA-1925-01 or UUID)
+scientificName;Scientific name of taxon: Linaria cretacea Fisch. ex Spreng.
+eventDate;Date of collection or observation (ISO 8601): 1925-06-01, 2017-07-10, 2022-06-15
+country;Country: Kazakhstan, Russia, Ukraine
+stateProvince;Province/region: Aktobe Region, Orenburg Oblast, Donetsk Oblast, Voronezh Oblast
+locality;"Specific location: Ishkargantau Chalk Ridge, west of Akrab village; Streltsivka chalk outcrop near Streltsivka"
+decimalLatitude;Latitude (WGS84): 50.1234, 49.8765, 51.2345
+decimalLongitude;Longitude (WGS84): 58.1234, 38.7654, 36.9876
+coordinateUncertaintyInMeters;Georeferencing error: 50 (m), 100 (m)
+basisOfRecord;Record type: PreservedSpecimen (herbarium) or HumanObservation (field mark)
+institutionCode;Herbarium code: AA (Institute of Botany of the Republic of Karelia), LE (Komarovsky), MW (Moscow State University), KW (Institute of Botany of the National Academy of Sciences of Ukraine)
+catalogNumber;Herbarium specimen number: 7480Linaria-1925, MW-12345, LE-67890
+habitat;"Brief description: south-facing chalk slope with sparse scree; open marl outcrop with minimal vegetation"
